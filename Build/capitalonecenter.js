@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
   document.body.appendChild(script);
 
   var resetButton = document.createElement("button");
+  resetButton.id = "reset-view-button";  // Assigning the ID to the button
   resetButton.textContent = "Reset View";
   resetButton.onclick = function() {
     if (globalunityinstance) {
