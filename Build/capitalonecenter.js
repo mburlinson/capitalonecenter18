@@ -57,5 +57,17 @@
         });
       };
       document.body.appendChild(script);
+
+       function receiveMessageFromUnity(txt) {
+      const lblMessage = document.getElementById("lblMessage");
+      lblMessage.innerText = txt;
+   }
+
+    function sendMessageToUnity1() {
+      globalunityinstance.SendMessage('Bridge','B110on');
+   }
+       function sendMessageToUnity2() {
+      globalunityinstance.SendMessage('button','OnMouseDown');
+   }
     
       
