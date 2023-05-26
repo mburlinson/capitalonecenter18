@@ -42,4 +42,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   };
   document.body.appendChild(script);
+
+  var resetButton = document.createElement("button");
+  resetButton.textContent = "Reset View";
+  resetButton.onclick = function() {
+    if (globalunityinstance) {
+      globalunityinstance.SendMessage('CameraController', 'ResetView');
+    }
+  };
+  document.body.appendChild(resetButton);
 });
