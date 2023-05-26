@@ -38,7 +38,8 @@
       } else {
         //canvas.style.width = "1280px";
         //canvas.style.height = "720px";
-      //}
+      //
+      }
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
@@ -69,5 +70,5 @@
        function sendMessageToUnity2() {
       globalunityinstance.SendMessage('button','OnMouseDown');
    }
-    
+
       
