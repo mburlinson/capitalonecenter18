@@ -1,5 +1,5 @@
 
-      var buildUrl = "https://mburlinson.github.io/COcore18/Build";
+      var buildUrl = "https://mburlinson.github.io/capitalonecenter18/Build";
       var globalunityinstance = null;
       var loaderUrl = buildUrl + "/COcore18.loader.js";
       var config = {
